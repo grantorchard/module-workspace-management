@@ -1,0 +1,5 @@
+---
+project_name: snyk_demo
+create_repo: false
+github_repository_name: tfc-demo
+github_connection_name: lcrowther-snyk
