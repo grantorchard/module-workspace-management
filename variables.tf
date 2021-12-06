@@ -1,62 +1,31 @@
-variable template_repository_owner {
-  type = string
-  default = "grantorchard"
+variable "github_project_privacy" {
+	default = "closed"
 }
 
-variable template_repository_name {
-  type = string
-  default = "terraform-repository-template"
+variable "github_repository_description" {
+	default = ""
 }
 
-variable repository_name {
-  type = string
+variable "github_repository_visibility" {
+	default = "private"
 }
 
-variable repository_description {
-  type = string
-  default = ""
+variable "github_template_repository_owner" {
+	default = ""
 }
 
-variable repository_branch {
-  type = string
-  default = "master"
+variable "github_template_repository_name" {
+	default = ""
 }
 
-variable oauth_token_id {
-  type = string
+variable "github_team_members" {
+	default = []
 }
 
-variable tfe_org_name {
-  type = string
-  default = "grantorchard"
+variable "github_connection_name" {
+	default = "se-apj-demos"
 }
 
-variable tfe_workspace_name {
-  type = string
-  default = ""
-}
-
-variable tfe_auto_apply {
-  type = bool
-  default = false
-}
-
-variable repository_private {
-  type = bool
-  default = false
-}
-
-variable env_var {
-  type = map
-  default = {}
-}
-
-variable tf_var {
-  type = map
-  default = {}
-}
-
-variable create_repo {
-  type = bool
-  default = true
+variable "terraform_organization" {
+	default = "se-apj-demos"
 }
