@@ -1,0 +1,5 @@
+---
+project_name: aws_core
+create_repo: false
+github_repository_name: terraform-aws-core
+github_connection_name: grantorchard
